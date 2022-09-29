@@ -1,0 +1,11 @@
+.circle {
+  width: 60px;
+  height: 60px;
+  padding: 17px;
+  background-color: white;
+}
+.circle:hover {
+  cursor: pointer;
+  background-color: rgb(249, 188, 57);
+  color: #333;
+}

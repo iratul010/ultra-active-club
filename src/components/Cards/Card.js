@@ -4,7 +4,7 @@ const Card = (props) => {
   const { data } = props;
   console.log(data.img);
   return (
-    <div className=" card col-lg-4 d-flex flex-column  p-3 ">
+    <div className=" card col-lg-4 col-sm-6 d-flex flex-column  p-3 ">
       <div className="img">
         <img src={data.img} alt="" />
       </div>
