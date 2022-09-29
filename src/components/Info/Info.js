@@ -80,7 +80,7 @@ const Info = () => {
 
       <div className="exercise container d-lg-flex flex-column bg-white ">
         <div className="d-lg-flex  align-items-center bg-light p-4 mb-4 ">
-          <h4 className="mx-5">Exercise Time</h4> <span>200 Seconds</span>
+          <h4 className="mx-5">Exercise Time</h4> <span className="times"> {} Seconds</span>
         </div>
         <div className="d-lg-flex align-items-center bg-light p-4">
           <h4 className="mx-5 ">Break Times</h4>

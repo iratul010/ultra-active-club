@@ -58,7 +58,7 @@ const Main = () => {
                 aria-expanded="false"
                 aria-controls="flush-collapseOne"
               >
-                Accordion Item #1
+                How does react works?
               </button>
             </h2>
             <div
@@ -68,8 +68,9 @@ const Main = () => {
               data-bs-parent="#accordionFlushExample"
             >
               <div className="accordion-body">
-                Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code>{" "}
-                className. This is the first item's accordion body.
+                ReactJS divides the UI into isolated reusable pieces of code known as components. React components work similarly
+                to JavaScript functions as they accept arbitrary inputs called properties or props. It's possible to have as many
+                components as necessary without cluttering your code.
               </div>
             </div>
           </div>
@@ -83,7 +84,7 @@ const Main = () => {
                 aria-expanded="false"
                 aria-controls="flush-collapseTwo"
               >
-                Accordion Item #2
+                Difference between props and state!
               </button>
             </h2>
             <div
@@ -93,8 +94,9 @@ const Main = () => {
               data-bs-parent="#accordionFlushExample"
             >
               <div className="accordion-body">
-                Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code>{" "}
-                className. This is the second item's accordion body. Let's imagine this being filled with some actual content.
+                Simply put, State is the local state of the component which cannot be accessed and modified outside of the
+                component. It's equivalent to local variables in a function. Props, on the other hand, make components reusable by
+                giving components the ability to receive data from their parent component in the form of props.
               </div>
             </div>
           </div>
@@ -108,7 +110,7 @@ const Main = () => {
                 aria-expanded="false"
                 aria-controls="flush-collapseThree"
               >
-                Accordion Item #3
+                More Benefits of useEffect!
               </button>
             </h2>
             <div
@@ -118,10 +120,10 @@ const Main = () => {
               data-bs-parent="#accordionFlushExample"
             >
               <div className="accordion-body">
-                Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class.
-                This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just
-                filling up the space to make it look, at least at first glance, a bit more representative of how this would look
-                in a real-world application.
+                Using useEffect is probably the best part of React Hooks. It helps reduce the clutter of the component lifecycle
+                methods and, most importantly, it helps separate different logic that can appear in the lifecycle methods. The
+                useEffect Hook allows you to perform side effects in your components. Some examples of side effects are: fetching
+                data, directly updating the DOM, and timers. useEffect accepts two arguments.
               </div>
             </div>
           </div>
