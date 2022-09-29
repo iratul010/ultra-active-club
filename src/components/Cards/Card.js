@@ -1,10 +1,10 @@
 import React from "react";
 import add from "../Utilities/Calculate/calculate";
 import "./Card.css";
-
 const Card = (props) => {
   const { data } = props;
   let time = data.time_required;
+
   return (
     <div className=" card col-lg-4 col-sm-6 d-flex flex-column  p-3 ">
       <div className="img">

@@ -1,7 +1,11 @@
 import React from "react";
 import "./Info.css";
 import self from "../../Selfimg/profile.jpg";
+
 const Info = () => {
+  //  function break(){
+
+  //  }
   return (
     <div style={{ height: "80%" }} className="bg-white container col-3 d-flex flex-column align-items-center p-4 ">
       <div className="info d-flex ">
@@ -51,28 +55,38 @@ const Info = () => {
           <div className="weight col mx-1">
             <div className="">
               <div>
-                <div className="circle rounded-circle  ">10s</div>
+                <div className="circle rounded-circle  ">
+                  <span>10</span>s
+                </div>
               </div>
             </div>
           </div>
           <div className="height col mx-1">
             <div className="">
-              <div className="circle rounded-circle  ">20s</div>
+              <div className="circle rounded-circle  ">
+                <span>20</span>s
+              </div>
             </div>
           </div>
           <div className="age col mx-1">
             <div className="">
-              <div className="circle rounded-circle  ">30s</div>
+              <div className="circle rounded-circle  ">
+                <span>30</span>s
+              </div>
             </div>
           </div>
           <div className="height col mx-1">
             <div className="">
-              <div className="circle rounded-circle  ">40s</div>
+              <div className="circle rounded-circle  ">
+                <span>40</span>s
+              </div>
             </div>
           </div>
           <div className="age col mx-1">
             <div className="">
-              <div className="circle rounded-circle  ">50s</div>
+              <div className="circle rounded-circle  ">
+                <span>50</span>s
+              </div>
             </div>
           </div>
         </div>
@@ -80,7 +94,11 @@ const Info = () => {
 
       <div className="exercise container d-lg-flex flex-column bg-white ">
         <div className="d-lg-flex  align-items-center bg-light p-4 mb-4 ">
-          <h4 className="mx-5">Exercise Time</h4> <span className="times"> {} Seconds</span>
+          <h4 className="mx-5">Exercise Time</h4>{" "}
+          <span>
+            {" "}
+            <span className="times">{0}</span> Seconds
+          </span>
         </div>
         <div className="d-lg-flex align-items-center bg-light p-4">
           <h4 className="mx-5 ">Break Times</h4>
