@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "name": "Jumping Jacks",
+    "img": "https://t4.ftcdn.net/jpg/04/39/72/23/360_F_439722333_AhfTUf7V5leNFK8DKSCvtFlPWV7W3GK3.jpg",
+    "time_required": "45",
+    "for_age": "18-20",
+    "description": "The purpose and intent of jumping jacks is to perform work on the quadriceps..."
+  },
+  {
+    "id": "2",
+    "name": "Plank",
+    "img": "https://media.istockphoto.com/vectors/woman-doing-plank-exercise-on-blue-mat-with-stopclock-symbol-over-her-vector-id1204463032?k=20&m=1204463032&s=612x612&w=0&h=2nQ9TtrA-sp4GUoPVc-pcqZGfH3w308dPnjJSsNRaOk=",
+    "time_required": "30",
+    "for_age": "18-20",
+    "description": "The plank is a bodyweight exercise which involves holding the trunk part of your body..."
+  },
+  {
+    "id": "3",
+    "name": "Push-ups",
+    "img": "https://www.wikihow.com/images/thumb/d/dc/Increase-the-Number-of-Pushups-You-Can-Do-Step-8-Version-5.jpg/aid732874-v4-1200px-Increase-the-Number-of-Pushups-You-Can-Do-Step-8-Version-5.jpg",
+    "time_required": "20",
+    "for_age": "18-20",
+    "description": "Push ups are one of the most effective exercises for building upper body strength and..."
+  },
+  {
+    "id": "4",
+    "name": "Dips Tricep",
+    "img": "https://t3.ftcdn.net/jpg/03/17/55/72/360_F_317557292_CxPpBGtdS7ACesnYR0XVdKaRZjwNKm2N.jpg",
+    "time_required": "25",
+    "for_age": "18-20",
+    "description": "Chair dips are also called tricep dips because they work the tricep muscles on..."
+  },
+  {
+    "id": "5",
+    "name": "Cobra Stretch",
+    "img": "https://us.123rf.com/450wm/lioputra/lioputra2010/lioputra201000179/157909262-man-doing-cobra-abdominal-stretch-old-horse-stretch-abdominals-exercise-flat-vector-illustration-iso.jpg?ver=6",
+    "time_required": "40",
+    "for_age": "18-20",
+    "description": "Cobra pose is a gentle backbend practiced from a face-down..."
+  },
+  {
+    "id": "6",
+    "name": "Spider-man Push-ups",
+    "img": "https://cdn1.vectorstock.com/i/1000x1000/75/80/spiderman-push-ups-exercise-vector-34857580.jpg",
+    "time_required": "30",
+    "for_age": "18-20",
+    "description": "Pick up your right foot and draw your right knee up and out..."
+  },
+  {
+    "id": "7",
+    "name": "kettlebell",
+    "img": "https://www.shape.com/thmb/Q_UNNcCN5F9bIGFh18hC_ZpTyUo=/400x0/filters:no_upscale():max_bytes(150000):strip_icc()/Best-Kettlebell-Exercises-side-plank-8fc6dd0ed15c48be96fa56e743a5f7c2.jpg",
+    "time_required": "30",
+    "for_age": "18-20",
+    "description": " Kettlebell swings are a full body movement that puts focus on building the posterior chain..."
+  },
+  {
+    "id": "8",
+    "name": "split-squat",
+    "img": "https://cdn1.vectorstock.com/i/1000x1000/17/45/man-with-barbell-doing-split-squat-or-lunge-vector-40601745.jpg",
+    "time_required": "30",
+    "for_age": "18-20",
+    "description": "The execution of the movement involves lowering down..."
+  },
+  {
+    "id": "9",
+    "name": "Ab wheel",
+    "img": "https://www.wikihow.com/images_en/thumb/4/4b/Use-an-Ab-Roller-Step-1-Version-5.jpg/v4-460px-Use-an-Ab-Roller-Step-1-Version-5.jpg.webp",
+    "time_required": "30",
+    "for_age": "18-20",
+    "description": "The ab roller is a simple device: two handles connecting a wheel..."
+  }
+]
