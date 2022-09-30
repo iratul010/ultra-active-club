@@ -72,16 +72,16 @@ const Info = (props) => {
       </div>
 
       <div className="container exercise container d-lg-flex flex-column  ">
-        <div className="row align-items-center bg-light p-4 mb-4 ">
-          <h4 className=" col col-lg-8">Exercise Time</h4>
+        <div className="row align-items-center bg-light py-3 mb-4 ">
+          <h5 className=" col col-lg-8">Exercise Time</h5>
           <div className="col col-lg-4 ">
             <span>{props.totalTime}</span> Seconds
           </div>
         </div>
-        <div className="row align-items-center bg-light p-4">
-          <h4 className=" col col-lg-8">Break Times</h4>
+        <div className="row align-items-center bg-light py-3">
+          <h5 className=" col col-lg-8">Break Times</h5>
           <div className="col  col-lg-4">
-            <span>{localStorage.getItem("breaktime")}</span> seconds
+            <span>{localStorage.getItem("breaktime")}</span> Seconds
           </div>
         </div>
       </div>
