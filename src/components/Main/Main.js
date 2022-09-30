@@ -26,11 +26,11 @@ const Main = () => {
  "
       >
         <div className=" col-8 m-3">
-          <div className="mb-5 container-sm d-flex  align-items-center">
-            <div className="w-2">
+          <div className="mb-5   container-sm d-flex flex-column flex-lg-row  align-items-center">
+            <div className=" ">
               <img style={{ width: "100px" }} src={logo} alt="logo" />
             </div>{" "}
-            <div>
+            <div className="">
               {" "}
               <h1 className="text-warning">Try-On-Club</h1>
             </div>

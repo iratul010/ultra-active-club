@@ -12,8 +12,8 @@ const Info = (props) => {
     localStorage.setItem("breaktime", value);
   }
   return (
-    <div className="container container-lg container-md  col-3 d-flex flex-column align-items-center  p-4   w-p bg-white">
-      <div className=" row  ">
+    <div className="container col-3 d-flex flex-column flex-lg-column align-items-center  p-5 bg-white">
+      <div className=" row ">
         <div className="col-lg-4 col-6">
           <img style={{ width: "100%", height: "80px", borderRadius: "10px" }} src={self} alt="" />
         </div>
@@ -27,7 +27,7 @@ const Info = (props) => {
           </p>
         </div>
       </div>
-      <div className="container about row bg-light  border p-3">
+      <div className="container about row bg-light  border ">
         <div className="weight col col-lg-4">
           <div className="kg">
             <span className="fw-bolder">6.8</span>
@@ -51,7 +51,7 @@ const Info = (props) => {
           </div>
         </div>
       </div>
-      <div className="container break   my-5 border p-4">
+      <div className="container-fluid break  m-4 border p-4 bg-light">
         <div className="text-start my-2">
           {" "}
           <h3>Add A Break</h3>
