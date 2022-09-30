@@ -52,9 +52,9 @@ const Main = () => {
         </div>
         <Info totalTime={totalTimes}></Info>
       </div>
-      <div className="container-lg p-5 container">
+      <div className="container container-lg p-5 ">
         {/*  */}
-        <div className="accordion accordion-flush bg-light" id="accordionFlushExample">
+        <div className="accordion accordion-flush bg-light container" id="accordionFlushExample">
           <div className="accordion-item">
             <h2 className="accordion-header" id="flush-headingOne">
               <button
