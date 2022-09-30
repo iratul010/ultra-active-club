@@ -1,18 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Info.css";
 import self from "../../Selfimg/profile.jpg";
-
-const Info = () => {
-  //  function break(){
-
-  //  }
+import { ToastContainer, toast } from "react-toastify";
+const Info = (props) => {
+  let arr = [10, 20, 30, 40, 50];
+  let [v, setV] = useState(0);
+  const notify = () => toast("Your Work Done!");
+  function brek(value) {
+    v = value;
+    setV(v);
+    localStorage.setItem("breaktime", value);
+  }
   return (
-    <div style={{ height: "80%" }} className="bg-white container col-3 d-flex flex-column align-items-center p-4 ">
-      <div className="info d-flex ">
-        <div style={{ width: "100px", height: "80px", marginRight: "10px" }}>
+    <div className="container container-lg container-md  col-3 d-flex flex-column align-items-center  p-4   w-p bg-white">
+      <div className=" row  ">
+        <div className="col-lg-4 col-6">
           <img style={{ width: "100%", height: "80px", borderRadius: "10px" }} src={self} alt="" />
         </div>
-        <div className="addrs">
+        <div className="addrs col-lg-8 col-6 col-6">
           <h2>Ratul Islam</h2>
           <p>
             <span className="mx-3">
@@ -22,8 +27,8 @@ const Info = () => {
           </p>
         </div>
       </div>
-      <div className="about d-lg-flex bg-light my-5 border p-3">
-        <div className="weight ">
+      <div className="container about row bg-light  border p-3">
+        <div className="weight col col-lg-4">
           <div className="kg">
             <span className="fw-bolder">6.8</span>
             <span>kg</span>
@@ -31,12 +36,12 @@ const Info = () => {
 
           <div>Wight</div>
         </div>
-        <div className="height col mx-5">
+        <div className="height col col-lg-4 ">
           <span className="fw-bolder">5.5</span>
           <br />
           <span>Height</span>
         </div>
-        <div className="age col mx-5">
+        <div className="age  col col-lg-4">
           <div className="">
             <span className="fw-bolder">26</span>
             <span>years</span>
@@ -46,70 +51,44 @@ const Info = () => {
           </div>
         </div>
       </div>
-      <div className="break  bg-light my-5 border p-4">
+      <div className="container break   my-5 border p-4">
         <div className="text-start my-2">
           {" "}
           <h3>Add A Break</h3>
         </div>
-        <div className="d-lg-flex">
-          <div className="weight col mx-1">
-            <div className="">
-              <div>
-                <div className="circle rounded-circle  ">
-                  <span>10</span>s
+        <div className="row  ">
+          {arr.map((value) => (
+            <div key={value.toString()} className="weight col col-lg-2 mx-1">
+              <div className="">
+                <div>
+                  <div onClick={() => brek(value)} className="circle rounded-circle  ">
+                    <span>{value}</span>s
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="height col mx-1">
-            <div className="">
-              <div className="circle rounded-circle  ">
-                <span>20</span>s
-              </div>
-            </div>
-          </div>
-          <div className="age col mx-1">
-            <div className="">
-              <div className="circle rounded-circle  ">
-                <span>30</span>s
-              </div>
-            </div>
-          </div>
-          <div className="height col mx-1">
-            <div className="">
-              <div className="circle rounded-circle  ">
-                <span>40</span>s
-              </div>
-            </div>
-          </div>
-          <div className="age col mx-1">
-            <div className="">
-              <div className="circle rounded-circle  ">
-                <span>50</span>s
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
 
-      <div className="exercise container d-lg-flex flex-column bg-white ">
-        <div className="d-lg-flex  align-items-center bg-light p-4 mb-4 ">
-          <h4 className="mx-5">Exercise Time</h4>{" "}
-          <span>
-            {" "}
-            <span className="times">{0}</span> Seconds
-          </span>
+      <div className="container exercise container d-lg-flex flex-column  ">
+        <div className="row align-items-center bg-light p-4 mb-4 ">
+          <h4 className=" col col-lg-8">Exercise Time</h4>
+          <div className="col col-lg-4 ">
+            <span>{props.totalTime}</span> Seconds
+          </div>
         </div>
-        <div className="d-lg-flex align-items-center bg-light p-4">
-          <h4 className="mx-5 ">Break Times</h4>
-          <span>15 seconds</span>
+        <div className="row align-items-center bg-light p-4">
+          <h4 className=" col col-lg-8">Break Times</h4>
+          <div className="col  col-lg-4">
+            <span>{localStorage.getItem("breaktime")}</span> seconds
+          </div>
         </div>
       </div>
       <div className="m-4">
-        {" "}
-        <a href="#" className="btn btn-primary">
-          Activity Completed
-        </a>
+        <button className="btn btn-primary" onClick={notify}>
+          Activity Completed!
+        </button>
       </div>
     </div>
   );

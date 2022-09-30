@@ -1,8 +1,8 @@
 import React from "react";
-import add from "../Utilities/Calculate/calculate";
+
 import "./Card.css";
 const Card = (props) => {
-  const { data } = props;
+  const { data, add } = props;
   let time = data.time_required;
 
   return (
@@ -20,7 +20,7 @@ const Card = (props) => {
           Time required: <span className="fw-bold second">{data.time_required}</span> s
         </p>
         <div className="text-center">
-          <a type="button" onClick={() => add(parseInt(time))} className="btn btn-primary">
+          <a type="button" onClick={() => add(time)} className="btn btn-primary">
             Add To List
           </a>
         </div>

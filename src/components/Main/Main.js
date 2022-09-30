@@ -11,11 +11,18 @@ const Main = () => {
       .then((res) => res.json())
       .then((data) => setItems(data));
   }, []);
+
+  let [totalTimes, setTotalTimes] = useState(0);
+  function add(data) {
+    totalTimes += parseInt(data);
+    setTotalTimes(totalTimes);
+  }
+
   return (
     <section>
       <div
         style={{ margin: "0 auto" }}
-        className=" d-flex bg-light flex-column flex-lg-row  p-5
+        className="container-fluid d-flex bg-light flex-column flex-lg-row  p-5
  "
       >
         <div className=" col-8 m-3">
@@ -36,14 +43,14 @@ const Main = () => {
               <div className="container ">
                 <div className="row   p-4 g-3">
                   {items.map((data) => (
-                    <Card data={data} key={data.id}></Card>
+                    <Card data={data} add={add} key={data.id}></Card>
                   ))}
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <Info></Info>
+        <Info totalTime={totalTimes}></Info>
       </div>
       <div className="container-lg p-5 container">
         {/*  */}
